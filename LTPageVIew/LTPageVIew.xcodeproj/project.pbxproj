@@ -14,6 +14,10 @@
 		F14E75181EBF7DAC00D41862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14E75161EBF7DAC00D41862 /* LaunchScreen.storyboard */; };
 		F14E75231EBF7DAC00D41862 /* LTPageVIewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75221EBF7DAC00D41862 /* LTPageVIewTests.swift */; };
 		F14E752E1EBF7DAC00D41862 /* LTPageVIewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E752D1EBF7DAC00D41862 /* LTPageVIewUITests.swift */; };
+		F14E753E1EBF7F8500D41862 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E753D1EBF7F8500D41862 /* LTPageView.swift */; };
+		F14E75401EBF7F9700D41862 /* LTTitleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */; };
+		F14E75421EBF7FBA00D41862 /* LTContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75411EBF7FBA00D41862 /* LTContentView.swift */; };
+		F14E75441EBF7FF400D41862 /* LTPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75431EBF7FF400D41862 /* LTPageStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F14E75291EBF7DAC00D41862 /* LTPageVIewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTPageVIewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14E752D1EBF7DAC00D41862 /* LTPageVIewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPageVIewUITests.swift; sourceTree = "<group>"; };
 		F14E752F1EBF7DAC00D41862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14E753D1EBF7F8500D41862 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
+		F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTitleVIew.swift; sourceTree = "<group>"; };
+		F14E75411EBF7FBA00D41862 /* LTContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTContentView.swift; sourceTree = "<group>"; };
+		F14E75431EBF7FF400D41862 /* LTPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		F14E750C1EBF7DAC00D41862 /* LTPageVIew */ = {
 			isa = PBXGroup;
 			children = (
+				F14E753C1EBF7F2100D41862 /* LTPageView */,
 				F14E750D1EBF7DAC00D41862 /* AppDelegate.swift */,
 				F14E750F1EBF7DAC00D41862 /* ViewController.swift */,
 				F14E75111EBF7DAC00D41862 /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				F14E752F1EBF7DAC00D41862 /* Info.plist */,
 			);
 			path = LTPageVIewUITests;
+			sourceTree = "<group>";
+		};
+		F14E753C1EBF7F2100D41862 /* LTPageView */ = {
+			isa = PBXGroup;
+			children = (
+				F14E753D1EBF7F8500D41862 /* LTPageView.swift */,
+				F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */,
+				F14E75411EBF7FBA00D41862 /* LTContentView.swift */,
+				F14E75431EBF7FF400D41862 /* LTPageStyle.swift */,
+			);
+			name = LTPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +213,7 @@
 				TargetAttributes = {
 					F14E75091EBF7DAC00D41862 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C9DQ9W5NV9;
 						ProvisioningStyle = Automatic;
 					};
 					F14E751D1EBF7DAC00D41862 = {
@@ -259,7 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14E75421EBF7FBA00D41862 /* LTContentView.swift in Sources */,
 				F14E75101EBF7DAC00D41862 /* ViewController.swift in Sources */,
+				F14E75401EBF7F9700D41862 /* LTTitleVIew.swift in Sources */,
+				F14E753E1EBF7F8500D41862 /* LTPageView.swift in Sources */,
+				F14E75441EBF7FF400D41862 /* LTPageStyle.swift in Sources */,
 				F14E750E1EBF7DAC00D41862 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9DQ9W5NV9;
 				INFOPLIST_FILE = LTPageVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LTMana.LTPageVIew;
@@ -424,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9DQ9W5NV9;
 				INFOPLIST_FILE = LTPageVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LTMana.LTPageVIew;
@@ -505,6 +532,7 @@
 				F14E75341EBF7DAC00D41862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F14E75351EBF7DAC00D41862 /* Build configuration list for PBXNativeTarget "LTPageVIewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +541,7 @@
 				F14E75371EBF7DAC00D41862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F14E75381EBF7DAC00D41862 /* Build configuration list for PBXNativeTarget "LTPageVIewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +550,7 @@
 				F14E753A1EBF7DAC00D41862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         for _ in 0..<titles.count {
             let vc = UIViewController()
             
-            vc.view.backgroundColor=UIColor(red:CGFloat(arc4random_uniform(256))/255.0, green: CGFloat(arc4random_uniform(256))/255.0, blue: CGFloat(arc4random_uniform(256))/255.0, alpha:1.0)
+            vc.view.backgroundColor=UIColor.randomColor()
             
             childvcs.append(vc)
     

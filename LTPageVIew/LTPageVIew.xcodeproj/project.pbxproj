@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1015F541EC0C33500EE60B5 /* LTContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1015F501EC0C33500EE60B5 /* LTContentView.swift */; };
+		F1015F551EC0C33500EE60B5 /* LTPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1015F511EC0C33500EE60B5 /* LTPageStyle.swift */; };
+		F1015F561EC0C33500EE60B5 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1015F521EC0C33500EE60B5 /* LTPageView.swift */; };
+		F1015F571EC0C33500EE60B5 /* LTTitleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1015F531EC0C33500EE60B5 /* LTTitleVIew.swift */; };
+		F1015F5A1EC0C46600EE60B5 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1015F591EC0C46600EE60B5 /* UIColor-Extension.swift */; };
 		F14E750E1EBF7DAC00D41862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E750D1EBF7DAC00D41862 /* AppDelegate.swift */; };
 		F14E75101EBF7DAC00D41862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E750F1EBF7DAC00D41862 /* ViewController.swift */; };
 		F14E75131EBF7DAC00D41862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14E75111EBF7DAC00D41862 /* Main.storyboard */; };
@@ -14,10 +19,6 @@
 		F14E75181EBF7DAC00D41862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14E75161EBF7DAC00D41862 /* LaunchScreen.storyboard */; };
 		F14E75231EBF7DAC00D41862 /* LTPageVIewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75221EBF7DAC00D41862 /* LTPageVIewTests.swift */; };
 		F14E752E1EBF7DAC00D41862 /* LTPageVIewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E752D1EBF7DAC00D41862 /* LTPageVIewUITests.swift */; };
-		F14E753E1EBF7F8500D41862 /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E753D1EBF7F8500D41862 /* LTPageView.swift */; };
-		F14E75401EBF7F9700D41862 /* LTTitleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */; };
-		F14E75421EBF7FBA00D41862 /* LTContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75411EBF7FBA00D41862 /* LTContentView.swift */; };
-		F14E75441EBF7FF400D41862 /* LTPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E75431EBF7FF400D41862 /* LTPageStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1015F501EC0C33500EE60B5 /* LTContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTContentView.swift; sourceTree = "<group>"; };
+		F1015F511EC0C33500EE60B5 /* LTPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageStyle.swift; sourceTree = "<group>"; };
+		F1015F521EC0C33500EE60B5 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
+		F1015F531EC0C33500EE60B5 /* LTTitleVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTitleVIew.swift; sourceTree = "<group>"; };
+		F1015F591EC0C46600EE60B5 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		F14E750A1EBF7DAC00D41862 /* LTPageVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTPageVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14E750D1EBF7DAC00D41862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F14E750F1EBF7DAC00D41862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,10 +57,6 @@
 		F14E75291EBF7DAC00D41862 /* LTPageVIewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTPageVIewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14E752D1EBF7DAC00D41862 /* LTPageVIewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPageVIewUITests.swift; sourceTree = "<group>"; };
 		F14E752F1EBF7DAC00D41862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F14E753D1EBF7F8500D41862 /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
-		F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTitleVIew.swift; sourceTree = "<group>"; };
-		F14E75411EBF7FBA00D41862 /* LTContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTContentView.swift; sourceTree = "<group>"; };
-		F14E75431EBF7FF400D41862 /* LTPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1015F4F1EC0C33500EE60B5 /* LTPageView */ = {
+			isa = PBXGroup;
+			children = (
+				F1015F501EC0C33500EE60B5 /* LTContentView.swift */,
+				F1015F511EC0C33500EE60B5 /* LTPageStyle.swift */,
+				F1015F521EC0C33500EE60B5 /* LTPageView.swift */,
+				F1015F531EC0C33500EE60B5 /* LTTitleVIew.swift */,
+			);
+			path = LTPageView;
+			sourceTree = "<group>";
+		};
+		F1015F581EC0C44A00EE60B5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1015F591EC0C46600EE60B5 /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F14E75011EBF7DAC00D41862 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +126,8 @@
 		F14E750C1EBF7DAC00D41862 /* LTPageVIew */ = {
 			isa = PBXGroup;
 			children = (
-				F14E753C1EBF7F2100D41862 /* LTPageView */,
+				F1015F581EC0C44A00EE60B5 /* Extension */,
+				F1015F4F1EC0C33500EE60B5 /* LTPageView */,
 				F14E750D1EBF7DAC00D41862 /* AppDelegate.swift */,
 				F14E750F1EBF7DAC00D41862 /* ViewController.swift */,
 				F14E75111EBF7DAC00D41862 /* Main.storyboard */,
@@ -132,17 +154,6 @@
 				F14E752F1EBF7DAC00D41862 /* Info.plist */,
 			);
 			path = LTPageVIewUITests;
-			sourceTree = "<group>";
-		};
-		F14E753C1EBF7F2100D41862 /* LTPageView */ = {
-			isa = PBXGroup;
-			children = (
-				F14E753D1EBF7F8500D41862 /* LTPageView.swift */,
-				F14E753F1EBF7F9700D41862 /* LTTitleVIew.swift */,
-				F14E75411EBF7FBA00D41862 /* LTContentView.swift */,
-				F14E75431EBF7FF400D41862 /* LTPageStyle.swift */,
-			);
-			name = LTPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14E75421EBF7FBA00D41862 /* LTContentView.swift in Sources */,
 				F14E75101EBF7DAC00D41862 /* ViewController.swift in Sources */,
-				F14E75401EBF7F9700D41862 /* LTTitleVIew.swift in Sources */,
-				F14E753E1EBF7F8500D41862 /* LTPageView.swift in Sources */,
-				F14E75441EBF7FF400D41862 /* LTPageStyle.swift in Sources */,
+				F1015F571EC0C33500EE60B5 /* LTTitleVIew.swift in Sources */,
 				F14E750E1EBF7DAC00D41862 /* AppDelegate.swift in Sources */,
+				F1015F561EC0C33500EE60B5 /* LTPageView.swift in Sources */,
+				F1015F551EC0C33500EE60B5 /* LTPageStyle.swift in Sources */,
+				F1015F5A1EC0C46600EE60B5 /* UIColor-Extension.swift in Sources */,
+				F1015F541EC0C33500EE60B5 /* LTContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

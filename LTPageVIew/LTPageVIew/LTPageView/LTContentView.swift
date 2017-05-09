@@ -9,10 +9,10 @@
 import UIKit
 private let kContentCellID = "content"
 class LTContentView: UIView {
-   fileprivate var childVcs:[UIViewController]
-   fileprivate var parentVc:UIViewController
+    fileprivate var childVcs:[UIViewController]
+    fileprivate var parentVc:UIViewController
     fileprivate lazy var collectionView : UICollectionView = {
-       
+        
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = self.bounds.size
         layout.minimumInteritemSpacing = 0
@@ -27,8 +27,6 @@ class LTContentView: UIView {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.bounces = false
-        
-        
         return collectionView
     }()
     init(frame: CGRect,childVcs:[UIViewController],parentVc:UIViewController){
@@ -40,7 +38,7 @@ class LTContentView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-           }
+    }
     
     
 }

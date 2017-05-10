@@ -27,6 +27,7 @@ class LTContentView: UIView {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.bounces = false
+        collectionView.scrollsToTop = false //点击状态栏页面滚回最顶部
         return collectionView
     }()
     init(frame: CGRect,childVcs:[UIViewController],parentVc:UIViewController){
@@ -44,7 +45,6 @@ class LTContentView: UIView {
 }
 
 
-
 extension LTContentView{
     
     fileprivate func setupUI(){
@@ -56,7 +56,6 @@ extension LTContentView{
     }
     
 }
-
 
 extension LTContentView : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

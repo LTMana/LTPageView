@@ -10,5 +10,6 @@ import UIKit
 
 struct LTPageStyle{
     var titleHeight:CGFloat = 44
-    
+    var normalColor:UIColor = UIColor.white
+    var selectColor:UIColor = UIColor.orange
 }

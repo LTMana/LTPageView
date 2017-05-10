@@ -9,9 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
         let pageFrame = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height-64)
         
         let titles = ["推荐","游戏","娱乐","趣玩"]

@@ -57,15 +57,78 @@ extension LTTitleVIew{
             titleLabel.text = title
             titleLabel.tag = i
             titleLabel.textAlignment = .center
-    
+            titleLabel.textColor = i==0 ? style.selectColor : style.normalColor
+            titleLabel.font = style.titleFont
+            titleLabel.isUserInteractionEnabled=true
             
-            
-            
+            scrollView.addSubview(titleLabel)
             
             titleLabels.append(titleLabel)
+            
+            
+            
+            let tapGes = UITapGestureRecognizer(target: self, action: #selector(titleLabelClick(_:)))
+            
+            titleLabel.addGestureRecognizer(tapGes)
+            
+            
         }
         
         
         
+        let labelH:CGFloat = style.titleHeight
+        let labelY:CGFloat = 0
+        var labelW:CGFloat = bounds.width / CGFloat(titles.count)
+        var labelX:CGFloat = 0
+        
+        for (i,titleLabel) in titleLabels.enumerated() {
+            
+            if style.isScrollEnable {
+                
+                labelW = (titleLabel.text! as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : style.titleFont], context: nil).width
+                
+                labelX = i==0 ? style.titleMargin * 0.5 : (titleLabels[i-1].frame.maxX + style.titleMargin)
+            }else{
+                
+                
+               labelX = labelW * CGFloat(i)
+                
+                
+            }
+            
+            titleLabel.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
+            
+            
+        }
+        
+        if style.isScrollEnable{
+            scrollView.contentSize = CGSize(width: titleLabels.last!.frame.maxX + style.titleMargin * 0.5, height: 0)
+        }
+        
+        
+        
+        
     }
+}
+
+
+
+extension LTTitleVIew{
+    
+    
+    func titleLabelClick(_ tapGes:UITapGestureRecognizer) {
+        
+        
+        guard let targetLabel = tapGes.view as? UILabel else {
+            
+            return
+        }
+        
+              
+        
+    }
+    
+    
+    
+    
 }

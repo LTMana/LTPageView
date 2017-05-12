@@ -36,7 +36,7 @@ extension LTPageView{
         
         let TitleFrame = CGRect(x: 0, y: 0, width:bounds.width, height: style.titleHeight)
         let titleView = LTTitleVIew(frame: TitleFrame, titles: titles, style: style)
-        titleView.backgroundColor = UIColor(hexString: "#0000FF")
+        titleView.backgroundColor = UIColor.red
         
         addSubview(titleView)
         

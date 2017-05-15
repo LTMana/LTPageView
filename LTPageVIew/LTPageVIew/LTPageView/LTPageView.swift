@@ -36,19 +36,18 @@ extension LTPageView{
         
         let TitleFrame = CGRect(x: 0, y: 0, width:bounds.width, height: style.titleHeight)
         let titleView = LTTitleVIew(frame: TitleFrame, titles: titles, style: style)
-        titleView.backgroundColor = UIColor.red
+        titleView.backgroundColor = UIColor.black
         
         addSubview(titleView)
         
         let contentFrame = CGRect(x: 0, y: TitleFrame.maxY, width: bounds.width, height: bounds.height-style.titleHeight)
         let contentView = LTContentView(frame: contentFrame, childVcs: childVcs, parentVc: parentVc)
         
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = UIColor.black
         addSubview(contentView)
         
         
-        
-        
+        titleView.delegate = contentView
         
     }
     

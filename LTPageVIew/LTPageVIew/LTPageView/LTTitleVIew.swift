@@ -8,10 +8,25 @@
 
 import UIKit
 
-class LTTitleVIew: UIView {
 
-    var titles:[String]
-    var style: LTPageStyle
+protocol LTTitleVIewDelegate : class {
+    
+    
+    func titleView(_ titleView : LTTitleVIew , targetIndex : Int)
+    
+}
+
+
+class LTTitleVIew: UIView {
+    
+    
+    weak var delegate : LTTitleVIewDelegate?
+
+    fileprivate var titles:[String]
+    fileprivate var style: LTPageStyle
+    fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
+    fileprivate var currentIndex : Int = 0
+
     fileprivate lazy var scrollView : UIScrollView = {
       
         let scrollView = UIScrollView(frame: self.bounds)
@@ -48,8 +63,7 @@ extension LTTitleVIew{
     private func setupTitleLabels(){
         
         
-        var titleLabels : [UILabel] = [UILabel]()
-        for (i,title) in titles.enumerated(){
+            for (i,title) in titles.enumerated(){
             
             let titleLabel = UILabel()
             
@@ -124,8 +138,33 @@ extension LTTitleVIew{
             return
         }
         
-              
+        guard targetLabel.tag != currentIndex else {
+            return
+        }
         
+        let sourceLabel = titleLabels[currentIndex]
+        sourceLabel.textColor = style.normalColor
+        targetLabel.textColor = style.selectColor
+        
+        currentIndex = targetLabel.tag
+        
+        var offsetX = targetLabel.center.x - scrollView.bounds.width * 0.5
+        
+        if offsetX < 0 {
+            offsetX = 0
+        }
+        let maxOffsetX = scrollView.contentSize.width - scrollView.bounds.width
+        
+        if offsetX > maxOffsetX {
+            offsetX = maxOffsetX
+        }
+       
+        scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        
+        
+        delegate?.titleView(self, targetIndex: currentIndex)
+        
+    
     }
     
     

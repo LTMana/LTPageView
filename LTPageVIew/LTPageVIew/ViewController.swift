@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let pageFrame = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height-64)
         
-        let titles = ["推荐","游戏","娱乐","趣玩","你好","测试","娱乐","趣玩","你好","测试","娱乐","趣玩","你好","测试","娱乐","趣玩","你好","测试"]
+        let titles = ["推荐","游戏娱乐","娱乐","趣玩娱乐","你好","测试","娱乐","趣玩","你好","测试","娱乐","趣玩娱乐","你好","测试","娱乐","趣玩","你好","测试"]
         
         var childvcs = [UIViewController]()
         for _ in 0..<titles.count {

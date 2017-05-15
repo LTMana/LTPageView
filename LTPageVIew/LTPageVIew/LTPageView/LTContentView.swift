@@ -88,7 +88,24 @@ extension LTContentView : UICollectionViewDelegate{
 
 
 
+extension LTContentView : LTTitleVIewDelegate{
+    
+    
+    func titleView(_ titleView: LTTitleVIew, targetIndex: Int) {
+        
 
+        
+        let indexPath = IndexPath(item: targetIndex, section:0)
+        
+        
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        
+        
+        
+        
+    }
+    
+}
 
 
 
